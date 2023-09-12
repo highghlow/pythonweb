@@ -1,11 +1,14 @@
 [build-system]
-requires = ["setuptools>=61.0", "flask>=2.0.0"]
+requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "highghlow-pythonweb"
 version = "0.1.0"
 authors = [
   { name="Highghlow", email="highghlow@proton.me" },
+]
+dependencies = [
+  'flask >= 2.0.0, < 3.0'
 ]
 description = "A Flask wrapper for easy RESTful api development"
 readme = "README.md"
