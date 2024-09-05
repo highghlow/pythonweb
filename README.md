@@ -1,19 +1,5 @@
-# PythonWEB
-A Flask wrapper for easy RESTful api development
-## Quickstart
-```python
-import pythonweb
+# The project has moved to [codeberg](https://codeberg.org/highghlow/pythonweb)
+- [Where?](https://codeberg.org/highghlow/pythonweb/)
+- [Why?](https://sfconservancy.org/GiveUpGitHub/)
 
-app = pythonweb.Server()
-
-class ExampleException(Exception):
-    codename = "ERR_EXAMPLE"
-    verbose = "This is an example exception. The specified exception params would be here: {0} and here: {1}"
-    code = 501
-
-@app.api("/api/example", form=False) # form=true means that you can use this api route as a form handler
-def example_endpoint(param1 : int, param2 : bool): # Type annotations are not used by the server
-    if param2:
-        raise ExampleException(param1, param2, "Param") # 501 {"error":"ERR_EXAMPLE", "message":[param1, param2, "Param"], "verbose":"This is an example..."}
-    return {"some_json":param1+1}
-```
+![image](https://github.com/user-attachments/assets/45d80320-cb3c-452b-a59d-135d294d061a)
